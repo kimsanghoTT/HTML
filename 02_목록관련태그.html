@@ -11,7 +11,7 @@
             charset = 문자를 깨짐없이 전달. 
             UTF-8의 경우 한글을 깨짐없이 작성하기 위해 설정
 
-    lang="ko" : 웹에서 한국어로 올바르게 언어 설정 진행
+    lang="ko" : 웹에서 한국어로 올바르게 언어 설정 진행 / 검색할 때 검색엔진에 노출되는 언어 지정
     charset="UTF-8" : 01010101로 읽는 컴퓨터가 한글을 읽었을 때 깨짐없이 읽을 수 있도록 설정
                         UTF-8 한국에서만 작성하는 것이 아니라 다른 언어도 통용
 
@@ -22,11 +22,11 @@
   <head>
     <title>02 목록 관련 태그</title>
     <!-- 파일 제목과 사용자들에게 보여지는 탭 제목이 달랐으면 할 때 작성-->
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" >
     <!-- meta는 head 안에서만 작성할 것 -->
   </head>
   <body>
-    <h1>ul (UnOrdered List) 순서가 없는 목록</h1>
+    <h1>ul (UnOrdered List) 순서가 없는 단순 목록 나열</h1>
     <h1>li (List Item) 목록의 한 줄</h1>
     <ul>
         점심메뉴
@@ -36,7 +36,7 @@
         <li>순대국밥</li>
     </ul>
 
-    <h1>ol(Ordered List) 순서가 있는 목록</h1>
+    <h1>ol(Ordered List) 순서가 있는 목록 나열</h1>
     <pre>
     type "속성" : 표시되는 숫자 모양 변경
     type "a" : 영어 소문자로 시작 (a, b, c, d ...)

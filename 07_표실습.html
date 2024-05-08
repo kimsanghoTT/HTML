@@ -3,6 +3,34 @@
 <head>
     <title>음식가게</title>
     <meta charset="UTF-8">
+    <style>
+        th{
+            background-color: coral;
+        }
+
+    </style>
+    <!-- 
+    코드에서 스타일을 입힐 때 각각의 코드 안에 style을 작성해주는 것보다
+    <head> 아래에 <style>이라는 태그를 만들어서 내가 한 번에 꾸미고자하는 태그 이름과
+    꾸밀 내용을 {}안에 작성해주는 것이 가장 강력한 우선순위가 됨
+    
+     <tr style="background-color: rosybrown;">
+
+        보다
+
+    <head>
+        <style>
+        th{
+            background-color: coral;
+        }
+    </style>
+    </head>
+
+    처럼 작성한 것이 더 우선으로 디자인을 입힘
+
+    변경하고자 하는 스타일 대상이 여러개라면 ','를 사용해서 한 번에 적용 가능
+    ex) th, td{}
+    -->
 </head>
 <body>
     <h3>메뉴판</h3>
@@ -37,5 +65,92 @@
         </tr>
 
     </table>
+    <br>
+    <hr>
+    <h1>게시판</h1>
+    <ul>
+        <li><h3>게시물 제목 1</h3></li>
+        <p>작성자: 사용자1</p>
+        <p>작성일: 2024-05-07</p>
+        <p>내용: 이 게시물은 첫 번째 게시물입니다.</p>
+        
+        <li><h3>게시물 제목 2</h3></li>
+        <p>작성자: 사용자2</p>
+        <p>작성일: 2024-05-06</p>
+        <p>내용: 이 게시물은 두 번째 게시물입니다.</p>
+        
+    </ul>
+
+    <h1>게시물 목록 (테이블)</h1>
+    <table border="1" style="width: 100%;border-collapse: collapse;">
+        <tr style="background-color: rosybrown;">
+            <th>게시물 제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+            <th>내용</th>
+        </tr>
+        <tr>
+            <td>게시물 제목 1</td>
+            <td>사용자1</td>
+            <td>2024-05-07</td>
+            <td>이 게시물은 첫 번째 게시물입니다.</td>
+        </tr>
+        <tr>
+            <td>게시물 제목 2</td>
+            <td>사용자2</td>
+            <td>2024-05-06</td>
+            <td>이 게시물은 두 번째 게시물입니다.</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <caption>하수정 컬렉션</caption>
+    <table border="1">
+        <tr>
+            <th rowspan="5">제품리스트</th>
+            <th>코드</th>
+            <th>분류</th>
+            <th>가격</th>
+            <th>구매가능개수</th>
+        </tr>
+        <tr>
+            <td>01-468</td>
+            <td>가을</td>
+            <td>200,000원</td>
+            <td>1068</td>
+        </tr>
+        <tr>
+            <td>01-469</td>
+            <td>가을</td>
+            <td>150,000원</td>
+            <td>1700</td>
+        </tr>        <tr>
+            <td>01-470</td>
+            <td>여름</td>
+            <td>950,000원</td>
+            <td>2500</td>
+        </tr>        <tr>
+            <td>01-471</td>
+            <td>봄</td>
+            <td>120,000원</td>
+            <td>3200</td>
+        </tr>
+        <tr>
+            <th colspan="3">총합</th>
+            <td>1,420,000원</td>
+            <td>8468</td>
+        </tr>
+        <tr>
+            <th colspan="3">평균</th>
+            <td>355,000원</td>
+            <td>2,117</td>
+        </tr>
+
+
+
+    </table>
+
+    <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br>
 </body>
 </html>

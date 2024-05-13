@@ -6,13 +6,14 @@
      <style>
         body{
             background-color: black;
+            margin: 0 auto;
         }
         .컨테이너{
             width: 90%;
             background-color: aliceblue;
             padding: 20px;
             margin: 0 auto;
-            box-shadow: 0 0 30px rgb(155, 155, 237);
+            box-shadow: 0 0 100px rgb(155, 155, 237);
             border-radius: 10px;
             text-align: center;
         }
@@ -20,9 +21,10 @@
             background-color: aquamarine;
             padding: 10px 10px;
             border: none;
+            border-radius: 5px;
             
         }
-        .설문{
+        input{
             width: 90%;
             padding: 10px;
             border-radius: 3px;
@@ -36,14 +38,14 @@
     <div class="컨테이너">
         <h1>블로그 설문조사</h1>
         <form class="설문">
-            <p>이름 : </p><br>
-            <input type="text" placeholder="이름을 입력하세요." class="설문"><br>
-            <p>이메일 : </p><br>
-            <input type="text" placeholder="이메일을 입력하세요." class="설문"><br>
-            <p>나이 : </p><br>
-            <input type="text" placeholder="나이를 입력하세요." class="설문"><br>
-            <p>의견 : </p><br>
-            <input type="text" placeholder="기타 의견을 작성해주세요." class="설문"><br><br>
+            <label>이름 : <br><br>
+            <input type="text" placeholder="이름을 입력하세요." ></label><br><br>
+            <label>이메일 : <br><br>
+            <input type="text" placeholder="이메일을 입력하세요."></label><br><br>
+            <label>나이 : <br><br>
+            <input type="text" placeholder="나이를 입력하세요." ></label><br><br>
+            <label>의견 : <br><br>
+            <input type="text" placeholder="기타 의견을 작성해주세요." ></label><br><br>
 
             <button type="submit">제출하기</button>
         </form>

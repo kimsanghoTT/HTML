@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>실습문제2</title>
+</head>
+<body>
+    <form>
+        <ol>
+            <li>
+                <label>납품자명 : </label>
+                <input type="text" name="name">
+            </li>
+            <li>
+                <label>email : </label>
+                <input type="email" name="email">
+            </li>
+            <li><label>홈페이지 :</label>
+            <input type="url" value="https://"></li>
+            <li><label>지역 :</label>
+                <select>
+                    <option>부산</option>
+                </select>
+            </li>
+        </ol>
+        <br>
+        <ul>
+            <li>
+                <label>상품명 : </label>
+                <input type="text" name="product">
+            </li>
+            <li>
+                <label>납품수량 : </label>
+                <input type="text" name="amount">
+            </li>
+            <li>
+                <label>납품등급 : </label>
+                <input type="range" name="grade" min="1" max="5">
+            </li>
+            <li>
+                <label>기타사항 : </label>
+                <textarea name="etc" rows="5" cols="20"></textarea>
+            </li>
+        </ul>
+        <button>send message</button>
+    </form>
+</body>
+</html>

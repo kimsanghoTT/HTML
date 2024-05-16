@@ -23,7 +23,9 @@
         <br>
         <label>
             <li>지역
-            <input type="text" name="location" value="부산"></li>             
+            <select name="location">
+                <option value="부산">부산</option>
+            </select></li>             
         </label>
         </ol>
         <br><br><br>
@@ -38,7 +40,7 @@
             납품등급 : 
             <input type="range" min="1" max="5" name="grade"></label></li><br>
         <li><label>기타사항 : 
-            <input type="text" name ="etc" style="height: 100px;">
+            <textarea name="etc" rows="5px"></textarea>
         </label></li>
       </ul>
        <button>send message</button>

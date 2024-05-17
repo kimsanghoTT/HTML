@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>일반 위치 선택자</title>
+</head>
+<body>
+    <h1>일반적인 위치나 구조를 나타내는 선택자</h1>
+    <pre>
+        형제 관계에 있는 태그들 중에서 특정 태그만 선택하는 선택자
+
+        선택하는 기준을 통해 위치를 구분
+        <div>
+        <div class="A"></div>
+        <div class="B"></div>
+        </div>
+        div 태그 대신 변수명 A로 선택할 수 있음
+
+        - A: first-child
+            형제들 중에서 가장 첫 번째를 선택
+            첫 번째가 "A"가 맞다면 선택
+        - B: last-child
+            형제들 중에서 가장 마지막 번째를 선택
+            마지막이 "B"가 맞다면 선택
+
+        <div class="형제들">
+            <div class="일"></div>
+            <div class="이"></div>
+            <div class="삼"></div>
+            <div class="사"></div>
+        </div>
+        일: nth-child(1) = 형제들 중에서 첫 번째가 "일"이 맞다면 선택
+        이: nth-child(2) = 형제들 중에서 두 번째가 "이"가 맞다면 선택
+        삼: nth-child(3) = 형제들 중에서 두 번째가 "삼"가 맞다면 선택
+        사: nth-child(4) = 형제들 중에서 두 번째가 "사"가 맞다면 선택
+
+        만약 태그옆에 class나 id가 없으면 태그명을 작성해줘도 됨
+        <div class="선택받은아이들">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        .선택받은아이들 > div:nth-child(1){}
+            선택받은 아이들 태그 안에서 가장 첫 번째 작성된 div 태그 선택
+        
+        .선택받은아이들 > div:nth-child(2){}
+            선택받은 아이들 태그 안에서 두 번째로 작성된 div 태그 선택
+            
+        .선택받은아이들 > div:nth-child(n){}
+            선택받은 아이들 태그 안에서 n 번째로 작성된 div 태그 선택
+            
+        만약 중간 자식들은 건너 뛰고 맨 마지막에 있는 자식만 꾸며주고 싶다면
+        .선택받은아이들 > div:last-child{}
+
+        
+    </pre>
+</body>
+</html>

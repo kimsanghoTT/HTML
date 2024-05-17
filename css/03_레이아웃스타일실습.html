@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃실습</title>
+    <style>
+        .block{
+            border: dotted 3px chocolate;
+            width: 150px;
+            height: 150px;
+            display: block
+        }
+        .inline{
+            display: inline;
+        }
+        .inlineblock{
+            display: inline-block;
+        }
+        .hidden{
+            visibility: hidden;
+        }
+        .none{
+            display: none;
+        }
+        .영역1{
+           background-color: aqua;
+        }
+        .영역2{
+            background-color: blueviolet;
+        }
+        .영역3{
+            background-color: cornflowerblue;
+        }
+        .영역4{
+            background-color: coral;
+        }
+        .영역5{
+            background-color: darkseagreen;
+        }
+        .영역6{
+            background-color: crimson;
+        }
+        .container{
+            border: 2px solid crimson;
+            width: 470px;
+            height: 600px;
+        }
+        #태그2 > div{
+            width: 50%;
+            height: 100%;
+            float: right;
+        }
+        .container > div:first-child{
+            background-color: mediumblue;
+        }
+        .container > div:last-child{
+            background-color: lightgoldenrodyellow;
+        }
+        #first > div:nth-child(1){
+            background-color: black;
+            height: 25%;
+        }
+        #first > div:nth-child(2){
+            background-color: lightsalmon;
+            height: 50%;
+        }
+        #first > div:nth-child(3){
+            background-color: palegreen;
+            height: 25%;
+        }
+        /*
+            nth-child : 특정한 순서에 있는 태그를 선택할 때 사용
+        
+        */
+    </style>
+</head>
+<body>
+    <h1>레이아웃 실습 예제</h1>
+    <h3>block 형식 요소를 inline 형식으로 변경</h3>
+
+    <span class="block 영역1 inline">1번 영역</span>
+    <span class="block 영역2 inline">2번 영역</span>
+    
+
+    <h3>inline-block, none 확인하기</h3>
+
+    <span class="block 영역1 inlineblock">1번 영역</span>
+    <span class="block 영역2 inlineblock hidden">2번 영역</span>
+    <span class="block 영역3 inlineblock">3번 영역</span>
+    <span class="block 영역4 inlineblock">4번 영역</span>
+    <span class="block 영역5 inlineblock none">5번 영역</span>
+    <span class="block 영역6 inlineblock">6번 영역</span>
+
+    <h3>화면 영역 분할</h3>
+    <h4>상하로 2분할</h4>
+
+    <div class="container" id="태그2">
+        <div></div>
+        <div></div>
+    </div>
+<br>
+    <h4>상하로 3분할</h4>
+    <br>
+    <div class="container" id="first">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

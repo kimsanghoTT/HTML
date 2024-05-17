@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>과일나라</title>
+    <style>
+        /*style 안에 img 작성 후 {} 안에 적용하고 싶은 내용을 작성해주면
+        html 안에 있는 모든 img 태그에 스타일이 적용됨
+        padding : 글자를 중심으로 사방에 간격을 줌, 동일한 간격으로 공간을 확보
+        border : 테두리에 관련된 설정을 해주는 것
+        - 테두리 사이즈 : 1px : 가장 얇은 선으로 그려주는 것
+                          숫자가 커질수록 테두리 굵기가 늘어남
+        - solid : 일반적으로 라인을 그려주는 테두리
+        - 색상 : 테두리 색상 지정
+        style에는 똑같은 태그를 여러번 불러와서 설정할 수 있음
+        ','를 이용해서 작성할 때는 동일한 속성을 작성해줄 때 사용
+        ','를 이용하지 않고 작성할 때는 태그가 단독으로 스타일을 갖길 원할 때 사용
+        */
+        th,td{
+            border : 1px solid violet;
+            text-align: center;
+            padding: 10px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th{
+            background-color: violet;
+            color: white;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>과일 가격표</h2>
+    <table>
+        <tr>
+            <th>과일</th>
+            <th>가격</th>
+            <th>이미지</th>
+        </tr>
+        <tr>
+            <td>사과</td>
+            <td>1,000원</td>
+            <td><img src="https://img.hankyung.com/photo/202403/AA.36104679.1.jpg" alt="사과"/></td>
+        </tr>
+        <tr>
+            <td>바나나</td>
+            <td>800원</td>
+            <td><img src="https://www.sisajournal.com/news/photo/202105/216731_124666_4150.jpg" alt="바나나"/></td>
+        </tr>
+        <tr>
+            <td>딸기</td>
+            <td>1,500원</td>
+            <td><img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201502/04/htm_20150204185442c010c011.jpg" alt="딸기"/></td>
+        </tr>
+    </table>
+</body>
+</html>

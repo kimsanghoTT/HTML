@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배달 주문하기</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        .컨테이너{
+            width: 90%;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgb(81,81,81);
+            border: 2px solid red;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            width: 40%;
+            border: 1px solid red;
+            border-radius: 3px;
+            padding: 4px;
+        }
+        .정보, form{
+            margin: 10px;
+            padding: 20px;
+        }
+        button{
+            padding: 10px 20px;
+            background-color: orange;
+            border-radius: 5px;
+            width: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="컨테이너">
+        <h1>배달 주문하기</h1>
+        <form>
+            <div class="정보">
+                <label>주문번호:</label><br>
+                <input type="number" required readonly value="1"/>
+            </div><br>
+            <div class="정보">
+                <label>사용자이름:</label><br>
+                <input type="text" required/>
+            </div><br>
+            <div class="정보">
+                <label>휴대폰번호:</label><br>
+                <input type="tel" required/>
+            </div><br>
+            <div class="정보">
+                <label>이메일:</label><br>
+                <input type="email" required/>
+            </div><br>
+            <div class="정보">
+                <label>비밀번호:</label><br>
+                <input type="password" required/>
+            </div><br>
+            <div class="정보">
+                <label>주소:</label><br>
+                <input type="text" required/>
+            </div><br>
+
+            <button>배달하기</button>
+        </form>
+    </div>
+</body>
+</html>

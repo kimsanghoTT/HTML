@@ -1,0 +1,92 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6f6f6;
+
+}
+.header{
+    background-image: linear-gradient(to right, #ff0080, #ff5580, #ffff80);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.nevigation{
+    background-image: linear-gradient(to right, #ff0080, #ff5580, #ffff80);
+    
+    margin-top: -20px; /*위 여백 간격 조정. 음수: 간격 좁혀짐, 양수: 간격넓어짐*/
+    text-align: center;
+}
+.nevigation ul{
+    list-style-type: none;
+}
+.nevigation ul, li{
+    display: inline;
+    margin-right: 20px;
+}
+.nevigation ul, li, a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.main{
+    
+    padding: 20px;
+    display: flex;
+
+}
+.제품사진{
+    border: 1px solid plum;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    /*태그 아래로 공백이 필요할 때*/
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px brown;
+}
+.제품사진 img{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/*마우스를 버튼 위로 올리기 전 모습*/
+.제품사진 button{
+    background-color: #ff5580;
+    color: wheat;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    /*버튼 위에 마우스를 올렸을 때 마우스 아이콘 변경*/
+    cursor: pointer;
+}
+/*마우스를 버튼 위로 올린 후 모습*/
+.제품사진 button:hover{
+    background-color: #a40153;
+    color: wheat;
+}
+.할인{
+    background-color: red;
+    color: yellow;
+    width: 50px;
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.footer{
+    background-color: #ff6b81;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/*제품 상세보기에 들어갈 서식*/
+
+.ProductMain{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 70%;
+    background-color: white;
+}

@@ -78,8 +78,14 @@
                 //정규식과 일치하지 않을 때 회원가입 방지.
                 return false;
             }
+
+            if(!idPattern.test(id)){
+                alert("아이디는 소문자 영어 5~10 글자로 작성해주세요.");
+                return false;
+            }
+            
             if(pw1.length < 1 || pw2.length < 1){
-                alert("비밀번호를 입력해주세요.");
+                alert("비밀번호를 모두 입력해주세요.");
                 return false;
 
             }
@@ -94,13 +100,8 @@
                     return true;
                 }
             }
-            
+                    
 
-            
-            if(!idPattern.test(id)){
-                alert("아이디는 소문자 영어 5~10 글자로 작성해주세요.");
-                return false;
-            }
 
         }
 

@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입 결과</title>
     <script src="../../../javascript/jQuery/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="29_회원가입.css">
+    <style>
+        .container{
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px;
+            text-align: center;
+        }
+        h1{
+            color: yellowgreen;
+        }
+        p{
+            font-size: 18px;
+            color: #333;
+        }
+        span{
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>회원가입 완료를 환영합니다.</h1>
-    <p>이름 : <span id="resultName"></span></p>
-    <p>나이 : <span id="resultAge"></span></p>
-    <p>아이디 : <span id="resultId"></span></p>  
+    <div class="container">    
+        <h1>회원가입 완료를 환영합니다.</h1>
+        <p>이름 : <span id="resultName"></span></p>
+        <p>나이 : <span id="resultAge"></span></p>
+        <p>성별 : <span id="resultGender"></span></p>
+        <p>취미 : <span id="resultHobby"></span></p>
+        <p>아이디 : <span id="resultId"></span></p>  
+    </div>
 </body>
 <script>
     $(document).ready(function(){
@@ -20,12 +44,19 @@
         const getName = URLParams.get('signName');
         const getAge = URLParams.get('signAge');
         const getId = URLParams.get('signId');
+        const getGender = URLParams.get('signGender');
 
         $("#resultName").text(getName);
         $("#resultAge").text(getAge);
         $("#resultId").text(getId);
+        $("#resultGender").text(getGender);
 
-        
+        //체크박스 선택이 여러개 -> 모두(All)
+        //사용자가 선택한 체크박스 모두 가져오기
+        const hobbies = URLParams.getAll('signHobby');
+
+        $("#resultHobby").text(hobbies.join(','));
+        //join을 사용해서 ,로 이어붙이기
     })
 </script>
 </html>

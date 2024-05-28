@@ -27,7 +27,7 @@
     //    window.location.href = '31_로그인결과.html';
 
         //만약 일치하는 아이디, 비밀번호가 없다면
-        if(loginId !== savedID && loginPw !== savedPW){
+        if(loginId !== savedID || loginPw !== savedPW){
             alert("일치하는 정보가 없습니다.");
             event.preventDefault();
         }

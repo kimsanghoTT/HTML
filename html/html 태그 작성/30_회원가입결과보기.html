@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 결과</title>
+    <script src="../../../javascript/jQuery/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>회원가입 완료를 환영합니다.</h1>
+    <p>이름 : <span id="resultName"></span></p>
+    <p>나이 : <span id="resultAge"></span></p>
+    <p>아이디 : <span id="resultId"></span></p>  
+</body>
+<script>
+    $(document).ready(function(){
+        // url 인터넷 주소, 이름, 나이, 아이디 같이 들여와서 보여주기
+        // file:///C:/Users/user1/frontend-workspace/css-html/html/html%20태그%20작성/30_회원가입결과보기.html?signName=홍길동&signAge=33&signId=hong
+        const URLParams = new URLSearchParams(window.location.search);
+        const getName = URLParams.get('signName');
+        const getAge = URLParams.get('signAge');
+        const getId = URLParams.get('signId');
+
+        $("#resultName").text(getName);
+        $("#resultAge").text(getAge);
+        $("#resultId").text(getId);
+
+        
+    })
+</script>
+</html>

@@ -55,7 +55,7 @@
                 <input type="password" id="pw2">
         <!--    <button type="button" onclick="일치여부확인()">비밀번호 일치 확인</button>             
                 <button type="button" onclick="확인()">이름 확인</button> -->
-                <button onclick="가입하기()">제출</button>
+                <button onclick="가입하기(event)">제출</button>
             </form>
         </div>
     </div>
@@ -63,7 +63,7 @@
         <p>&copy; 2024 내 블로그. All rights reserved.</p>
     </footer>
     <script>
-        function 가입하기(){
+        function 가입하기(event){
             const name = $('#name').val(); //이름 정보 가져오기
             const pw1 = $('#pw1').val();
             const pw2 = $('#pw2').val();
@@ -76,24 +76,24 @@
                 alert("이름은 한글로 작성해주세요.");
 
                 //정규식과 일치하지 않을 때 회원가입 방지.
-                return false;
+                event.preventDefault();
             }
 
             if(!idPattern.test(id)){
                 alert("아이디는 소문자 영어 5~10 글자로 작성해주세요.");
-                return false;
+                event.preventDefault();
             }
-            
+
             if(pw1.length < 1 || pw2.length < 1){
                 alert("비밀번호를 모두 입력해주세요.");
-                return false;
+                event.preventDefault();
 
             }
             else{
-                if(!pw1 === pw2){
+                if(!(pw1 === pw2)){
                 alert("비밀번호가 일치하지 않습니다.");
                 //일치하지 않으니 제출을 못하게 막음
-                return false;
+                event.preventDefault();
                 }
                 else{
                     alert("비밀번호가 일치합니다.");

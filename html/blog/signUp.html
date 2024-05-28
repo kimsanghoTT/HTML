@@ -71,6 +71,9 @@
             const namePattern = /^[가-힣]{2,5}$/;
             const idPattern = /^[a-z]{5,10}$/
 
+            localStorage.setItem("name", name);
+            localStorage.setItem("id",id);
+            localStorage.setItem("pw1", pw1);
 
             if(!namePattern.test(name)){ // ! : false일때 true 반환
                 alert("이름은 한글로 작성해주세요.");

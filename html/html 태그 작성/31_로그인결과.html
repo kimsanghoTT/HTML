@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../../javascript/jQuery/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>로그인 성공</h1>
+        <p>환영합니다. <span id="loginUser"></span>님</p>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        const UserID = localStorage.getItem('signId');
+        $("#loginUser").text(UserID);
+    })
+</script>
+</html>
